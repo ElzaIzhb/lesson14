@@ -1,0 +1,151 @@
+.card{
+    background: linear-gradient(to top, cyan, black);;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 0 50px;
+}
+.imgg img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+.imgg {
+    text-align: center;
+}
+.title {
+    color: white;
+    text-align: center;
+}
+.curs {
+    cursor: pointer;
+}
+.about {
+    background: linear-gradient(to top, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
+    border-radius: 0 20px;
+    padding: 20px;
+    font-size: large;
+}
+.main-card {
+    display: flex;  
+}
+.block {
+    display: inline-block;
+}
+.btn-2 {
+  letter-spacing: 0;
+}
+.btn-2:hover,
+.btn-2:active {
+letter-spacing: 5px;
+}
+.btn-2:after,
+.btn-2:before {
+backface-visibility: hidden;
+border: 1px solid rgba(#fff, 0);
+bottom: 0px;
+content: " ";
+display: block;
+margin: 0 auto;
+position: relative;
+transition: all 280ms ease-in-out;
+width: 0;
+}
+.btn-2:hover:after,
+.btn-2:hover:before {
+backface-visibility: hidden;
+border-color: #fff;
+transition: width 350ms ease-in-out;
+width: 70%;
+}
+.btn-2:hover:before {
+bottom: auto;
+top: 0;
+width: 70%;
+}
+.concon {
+  background: linear-gradient(to top, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
+  border-radius: 0 20px;
+  padding: 20px;
+  font-size: large;
+}
+.center-main {
+  margin: 200px;
+  justify-content: center;
+}
+
+body {
+    background-color: black;
+    /* Firefox */
+    background-image:
+       -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248,255,128,.5) 4px, transparent 40px),
+       -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255,186,170,.4) 3px, transparent 30px),
+       -moz-radial-gradient(ellipse, rgba(255,255,255,.9) 1px, rgba(251,255,186,.3) 2px, transparent 40px),
+       -moz-radial-gradient(ellipse, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 30px);
+    /* Webkit */
+    background-image:
+       -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248,255,128,.5)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+       -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+    /* Background Attributes */
+    background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+    background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    /* Animation */
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Firefox */
+    -moz-animation-name: movement;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    /* Webkit */
+    -webkit-animation-name: movement;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @keyframes movement
+  {
+    from {
+          background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+          background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+  }
+  @-moz-keyframes movement
+  {
+    from {
+          background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+          background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+  }
+  @-webkit-keyframes movement
+  {
+    from {
+          background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+          background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+  }
+  @media (max-width: 1330px) {
+    .pic {
+      margin-left: 0%;
+    }
+    button {
+      margin-left: 0%;
+    }
+    .but2 {
+      margin-left: 0%;
+    }
+  }
