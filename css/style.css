@@ -149,3 +149,24 @@ body {
       margin-left: 0%;
     }
   }
+  @media (max-width: 650px) {
+    .center-main {
+      margin: 0;
+    }
+  }
+  @media (max-width: 900px) {
+    .main-card {
+      display: inline-block;
+    }
+    .center-main {
+      display: flex;
+    }
+  }
+  @media (max-width: 443px) {
+    .flex-box {
+      margin: 0;
+    }
+    .btn-2 {
+      margin: 0;
+    }
+  }
